@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import logo from "@/assets/logo.png";
+import SearchInput from "./SearchInput";
 
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
           />
         </div>
       </Link>
-      {/* SearchInput */}
+      <SearchInput />
     </div>
   );
 };

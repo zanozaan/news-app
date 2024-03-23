@@ -6,13 +6,13 @@ const Navbar = () => {
     <nav>
       <ul className="py-2 border-t border-gray-300">
         <li className="space-x-6 text-xs">
+          <Link href="/">Home</Link>
           <Link href="/world">World</Link>
           <Link href="/business">Business</Link>
-          <Link href="/science">Science</Link>
-          <Link href="/healt">Healt</Link>
+          <Link href="/entertainment">Entertainment</Link>
+          <Link href="/health">Health</Link>
           <Link href="/sports">Sports</Link>
-          <Link href="/books">Books</Link>
-          <Link href="/lifestyle">Lifestyle</Link>
+          <Link href="/technology">Technology</Link>
           <Link href="/indonesia">Indonesia</Link>
         </li>
       </ul>
