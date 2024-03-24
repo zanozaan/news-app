@@ -8,14 +8,18 @@ const Article = ({ data }: { data: news }) => {
   return (
     <div className="py-2 border-b border-gray-300 mb-4">
       <div className="relative w-full h-[300px]">
-        {data?.urlToImage ? (
-          <Image
-            src={data.urlToImage}
-            alt={data?.title}
-            layout="fill"
-            objectFit="cover"
-          />
-        ) : null}
+        <Link href={data?.url} legacyBehavior>
+          <a target="_blank">
+            {data?.urlToImage ? (
+              <Image
+                src={data.urlToImage}
+                alt={data?.title}
+                layout="fill"
+                objectFit="cover"
+              />
+            ) : null}
+          </a>
+        </Link>
       </div>
       <Link href={data?.url} legacyBehavior>
         <a target="_blank" className="font-bold text-lg">

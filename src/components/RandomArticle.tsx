@@ -9,7 +9,7 @@ const RandomArticle = ({ data }: { data: news }) => {
     <div className="flex justify-between gap-2 p-2 mb-2 border-b border-gray-300">
       <div>
         <Link href={data?.url} legacyBehavior>
-          <a target="_blank" className="text-sm">
+          <a target="_blank" className="text-sm font-semibold">
             {data?.title}
           </a>
         </Link>
